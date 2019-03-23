@@ -56,18 +56,17 @@
       <% if @external_embed  == true %>
         <div id="bottom_right_watermark">
 
-
           <a style="text-decoration:none;
-              position: fixed;
-              bottom: 0px;
-              right: 0px;
-              padding: 8px;
-              font-family: Verdana;
-              font-size: 12px;
-              color: grey;"
-             href= "/users/<%=@author%>/projects/<%=@logix_project_id%>";
-             target="_blank";>
-            Made With CircuitVerse</a>
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            padding: 8px;
+            font-family: Verdana;
+            font-size: 12px;
+            color: grey;
+            z-index: 2"
+            href= "/users/<%=@author%>/projects/<%=@logix_project_id%>"
+            target="_blank">Made With CircuitVerse</a>
 
         </div>
       <% end %>
